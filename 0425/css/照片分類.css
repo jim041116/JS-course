@@ -1,0 +1,38 @@
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+#wrapper #filterBtn {
+  padding: 3rem 0;
+}
+#wrapper #filterBtn a {
+  background-image: linear-gradient(to left, rgb(247, 102, 169), rgb(250, 180, 241));
+  border-radius: 50px;
+  color: black;
+  line-height: 30px;
+  padding: 5px 30px;
+  margin: 0rem 1rem;
+  text-decoration: none;
+}
+#wrapper #filterBtn a:hover {
+  background-image: linear-gradient(to left, rgb(253, 52, 146), rgb(253, 146, 239));
+}
+#wrapper #filterBtn a:active {
+  color: rgb(199, 255, 69);
+  font-weight: bold;
+  box-shadow: inset 2px 2px 5px black;
+}
+#wrapper .filterList ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#wrapper .filterList ul li {
+  list-style: none;
+  margin: 0.2rem;
+}
+#wrapper .filterList ul li img {
+  display: block;
+}/*# sourceMappingURL=照片分類.css.map */

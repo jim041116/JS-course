@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 陣列 -->
+    <!-- 將相同類型且連續的資料包裝成陣列 -->
+
+    <!-- 建立一個數字存放1-5 -->
+    <script>
+
+        // 同資料的陣列(數字陣列、文字...)
+        // const arr1 = [1, 2, 3];
+        // console.log(arr1);
+        // // console.log(arr1.length);
+        // // console.log(arr1[0]); //陣列第一個值
+        // // console.log(arr1[1]); //陣列第二個值
+        // // 使用陣列方式印出陣列內容
+        // // let i = arr1;
+        // for (let i = 0; i < arr1.length; i++) {
+        //     console.log(arr1[i])
+        // }
+        // arr1[1]=5;
+
+        // // 用迴圈改變陣列內容
+        // for(let i = 0; i < arr1.length; i++){
+        //     arr1[i] = arr1[i]*2;
+        // }
+        // for(let i = 0; i < arr1.length; i++){
+        //     console.log(arr1[i]);
+        // }
+
+
+        // 不同資料陣列(數字+文字等...)
+        //     const arr2 = ['one', 2, '三'];
+        //     console.log(arr2)
+
+        // // 陣列中的陣列
+        // const arr3 = [
+        //     [1, 2, 3],
+        //     ['one', 2, 'three']
+        // ];
+        // console.log(arr3)
+        // console.log(arr3[0][2]) //第一個數字抓第一組陣列; 第二個數字抓第一怎陣列中的第三個值
+        // console.log(arr3[1][2])
+        // console.log(arr3[1][0])
+        // arr3[0][2]=5;
+        // console.log(arr3)
+
+        // 陣列中的物件
+        // const arr4 = [
+        //     // 物件使用大括號包起來
+        //     {
+        //         // 屬性名稱:屬性值
+        //         name: "王小明",
+        //         age: 18,
+        //         height: 175,
+        //         weight: 70,
+        //         score: [90, 60, 100]
+        //     },
+        //     [
+        //         {name:"黃小妹", type:"物件"},
+        //         {name:"王大明", type:"物件"}
+        //     ],
+        //     123,
+        //     function sayHi(){
+        //         return 'HI'
+        //     },
+        //     '文字資料'
+        // ];
+        // console.log(arr4);
+        // arr4[1][0].name="阿珠"; //更改陣列中的陣列的物件名稱
+        // console.log(arr4[1][0].name); //抓取陣列中的陣列的物件
+        // console.log(arr4[3]);
+
+        // // 取得陣列中的最後一個資料
+        // console.log(arr4[arr4.length-1]);
+
+        // 當陣列長度小於資料個數? 顯示空值
+        // const arr5 = [1, 2, 3];
+        // console.log(arr5);
+
+            // const arr7 = [
+            //     [1, 2, ,,5],
+            //     ['a',,'c']
+            // ]
+            // console.log(arr7[1][1]);
+
+            const arr8 = [1, 2, 3, 4, 5];
+            console.log(arr8);
+            arr8[8] = 90;
+            console.log(arr8)
+            console.log(arr8[8]);
+
+
+    </script>
+</body>
+
+</html>

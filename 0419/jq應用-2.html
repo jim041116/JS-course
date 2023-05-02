@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="輪播效果/js/jquery-1.11.3.min.js"></script>
+<script src="輪播效果/js/jquery.textslider.js"></script>
+<link rel="stylesheet" href="輪播效果/css/textslider.css">
+<script>
+    $(function(){
+        $('.slideText').textslider({
+            scrollspeed:1000,
+            pause:1000,
+            scrollNum:2,
+            direction:'scrollDown',
+        });
+    });
+</script>
+</head>
+<body>
+    <div class="slideText">
+        <ul>
+            <li>new-1</li>
+            <li>new-2</li>
+            <li>new-3</li>
+            <li>new-4</li>
+            <li>new-5</li>
+            <li>new-6</li>
+            <li>new-7</li>
+            <li>new-8</li>
+            <li>new-9</li>
+            <li>new-10</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 九九乘法表
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= 9; j++) {
+                //加入判斷式做排版，數字<10補0
+                if (i * j < 10) {
+                    document.write(`${i}*${j}=0${i * j}　`)
+                } else {
+                    document.write(`${i}*${j}=${i * j}　`)
+                }
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<hr>`)
+
+        // 九九乘法表簡寫
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= 9; j++) {
+                //相同部分先取出放外面
+                document.write(`${i}*${j}=`)
+                //判斷是否數字<10，<10則加上0
+                if (i * j < 10) {
+                    document.write(`0`)
+                }
+                //無<10則相乘加上空格
+                document.write(`${i * j}　`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<hr>`)
+
+
+
+        // for (let i = 1; i <= 5; i++) {
+        //     let star = "";
+        //     for (let j = 1; j <= i; j++) {
+        //         star = star + "*";
+        //     }
+        //     console.log(star);
+        // }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****寫法
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(`*`);
+            }
+            document.write(`<br>`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片輪播-加按鈕</title>
+    <style>
+        img {
+            width: 700px;
+            height: 450px;
+        }
+
+        header {
+            /* border: 1px red solid; */
+            width: 700px;
+            height: 450px;
+            position: relative;
+        }
+
+        /* 導覽按鈕 */
+        #nav {
+            right: 40%;
+            bottom: 1rem;
+            position: absolute;
+            z-index: 99;
+        }
+
+        #nav a {
+            display: inline-block;
+            text-align: center;
+            line-height: 25px; /*行高值等於高度，文字可垂直致中*/
+            margin-left: 1rem;
+            color: rgb(63, 61, 61);
+            text-decoration: none;
+            border: 1px dashed rgb(173, 0, 0);
+            background-color: gold;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            transition: .5s;
+            /* 將文字隱藏 */
+            font-size: 0;
+        }
+
+        #nav a:hover {
+            color: rgb(2, 16, 204);
+            background-color: white;
+        }
+        /* 作用中的時候變色 */
+        #nav a.activeSlide{
+            color: rgb(2, 16, 204);
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="imgCycle">
+            <img src="images/1.jpg" alt="img">
+            <img src="images/2.jpg" alt="img">
+            <img src="images/3.jpg" alt="img">
+            <img src="images/4.jpg" alt="img">
+            <img src="images/5.jpg" alt="img">
+        </div>
+
+    </header>
+
+    <script src="jQuery/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+
+    <script>
+        $(function () {
+            $('#imgCycle').after('<div id="nav">').cycle({
+                fx: 'shuffle',
+                pager:'#nav',  // 顯示輪播按鈕的數字
+            });
+        });
+    </script>
+</body>
+
+</html>

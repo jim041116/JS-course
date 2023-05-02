@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        .ttpShow {
+            display: none;
+        }
+
+        #ttpPanel {
+            padding: 10px;
+            border: 1px solid red;
+            width: 200px;
+            background-color: white;
+            position: absolute;
+            z-index: 99;
+            display: none;
+        }
+    </style>
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            //has():尋找指定容器名稱
+            //children():尋找超連結中的 ttpShow 類別
+            //html():取得選取氣中的內容
+            $('a:has(.ttpShow)').mouseover(function (e) {
+                //滑鼠碰到連結的時候 1.動態增加 ttpPanel 2.顯示外框 3.調整座標位置
+                $('body').append('<div id="ttpPanel">' + $(this).children('.ttpShow').html() + '</div>'); //代表在body下動態建立一個id
+                $('#ttpPanel').css({ top: (e.pageY + 10) + 'px', left: (e.pageX + 10) + 'px' }).fadeIn('fast');
+            }).mousemove(function (e) {
+                // 滑鼠移動的時候 1.改變外框座標的位置(絕對定位)
+                $('#ttpPanel').css({ top: (e.pageY + 10) + 'px', left: (e.pageX + 10) + 'px' });
+            }).mouseout(function () {
+                //移除動態產生的 ttpPanel
+                $('#ttpPanel').remove;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum <a href="#">dolor<span class="ttpShow">toolTip內容</span></a> sit amet consectetur adipisicing elit.
+        Animi maxime rem sequi unde amet molestias impedit excepturi, quo et cumque, aperiam a enim ullam alias voluptas
+        iusto <a href="#">inventore<span class="ttpShow">toolTip內容</span></a> nam eligendi optio doloremque id. Assumenda repellat molestias deserunt atque minus ipsum soluta
+        accusantium officiis qui modi enim eum rem sit, vitae labore consequatur doloribus totam aperiam illum,
+        architecto esse. Maiores ipsa repellat est vero amet similique fugiat maxime veritatis voluptate tempora, eius
+        ad cum provident laborum itaque libero quia magni fugit iure eos ducimus expedita reprehenderit, ullam in? Error
+        ipsam corporis delectus quos, vel a. Accusantium odit praesentium modi quae totam molestiae temporibus earum vel
+        voluptatem, nisi, ipsa hic ullam provident cupiditate consequatur qui! Laudantium autem, quas ipsum tempora
+        quis, possimus molestiae modi consequatur cumque doloremque sapiente voluptates optio repellat unde nisi,
+        ducimus eaque amet voluptatem eveniet. Deleniti ea praesentium laudantium, odit minima rem necessitatibus
+        tenetur saepe laborum eligendi, animi id corrupti sequi pariatur non magni esse corporis commodi architecto at
+        consequatur! Voluptatum nemo perferendis itaque harum aspernatur consectetur, mollitia expedita excepturi
+        cupiditate ex incidunt earum explicabo perspiciatis, autem deserunt aut sunt eveniet modi. Porro culpa libero
+        est ducimus eos ipsam, nam earum vel nemo modi dolore tempora. Consequuntur minus ullam at dicta nobis
+        accusantium, dolores corporis culpa itaque sequi modi, dolorem rem in nisi voluptates aperiam dolorum sunt
+        doloremque magni ipsam ducimus nihil est! Possimus, blanditiis labore eius a accusamus ipsum voluptate,
+        veritatis quod laudantium saepe ratione quam neque dicta tempore quisquam, eligendi dolorem nulla ipsa totam
+        illum ullam eaque vero quia est. Nobis maiores commodi qui cumque optio animi sit molestiae, eaque voluptas ipsa
+        quos quis ad vel consequuntur facilis facere minima excepturi laudantium expedita reiciendis voluptatibus?
+        Facilis quae autem, esse eaque vero ullam eligendi aliquid, expedita tenetur repellat magni voluptas quis
+        repudiandae illo nam nemo veniam obcaecati optio!</p>
+</body>
+
+</html>

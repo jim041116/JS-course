@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery/js/jquery-1.11.3.min.js"></script>
+    <script src="jQuery/js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $("#carousel").jCarouselLite({
+                auto: 2000, //轉動秒數
+                scroll: 1, //單次轉動張數
+                visible: 3, //一次瀏覽張數
+                speed: 1000, //轉動速度
+            });
+        });
+    </script>
+    <style>
+        #carousel {
+            background-color: rgb(54, 54, 54);
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        #carousel img {
+            width: 80%;
+            /* height: 120px; */
+            vertical-align: top;
+            margin:2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 旋轉木馬效果 -->
+    <div id="carousel">
+    <ul>
+        <li><img src="./jQuery/images/1.jpg" alt="jpg"></li>
+        <li><img src="./jQuery/images/2.jpg" alt="jpg"></li>
+        <li><img src="./jQuery/images/3.jpg" alt="jpg"></li>
+        <li><img src="./jQuery/images/4.jpg" alt="jpg"></li>
+        <li><img src="./jQuery/images/5.jpg" alt="jpg"></li>
+    </ul>
+    </div>
+</body>
+
+</html>

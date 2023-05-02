@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .box_1 {
+            width: 400px;
+            height: 220px;
+            display: block;
+            overflow: hidden;
+
+        }
+
+        .box_1 img {
+            width: 100%;
+            transition: .5s;
+        }
+
+        a:hover img {
+            transform: scale(1.5);
+        }
+
+        /* .imgScale img {
+            transform: scale(1.5);
+        } */
+    </style>
+
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <!-- <script>
+        $(function () {
+            $('.box_1').hover(function () {
+                //動態增加類別(addClass)
+                $('.box_1').addClass('imgScale');
+            }, function () { 
+                //動態移除類別(removeClass)
+                $('.box_1').removeClass('imgScale');
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+    <a href="#" class="box_1">
+        <img src="dji_fly_20230124_105622_463_1674529171801_photo_optimized.jpg" alt="">
+    </a>
+</body>
+
+</html>

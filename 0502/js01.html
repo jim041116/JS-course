@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 建立物件方法二 JSON
+        // 語法：
+        // 成員名稱1:資料1,
+        // 成員名稱2:資料2,
+
+        let myBMI = {
+            name: '廖珞軒',
+            age: 28,
+            h: 183,
+            w: 70,
+            bmi:function(){
+                let mybmi = Math.floor(this.w / ((this.h * this.h) / 100) * 100);
+                console.log(mybmi);
+            }
+        };
+        myBMI.bmi();
+        console.log(Math.floor(myBMI.w / ((myBMI.h / 100) * (myBMI.h/ 100))));
+        
+
+    </script>
+</body>
+
+</html>

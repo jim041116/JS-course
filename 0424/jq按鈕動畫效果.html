@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery/js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $('.button').hover(function () {
+                $('.button').stop().animate({
+                    opacity: '.7',
+                    fontSize: '1.5rem'
+                });
+        }, function () { //此function 代表無hover的效果的動畫
+            $('.button').stop().animate({
+                opacity: '1',
+                fontSize: '1.2rem'
+            });
+        });
+        });
+    </script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .button {
+            color: rgb(48, 48, 48);
+            width: 150px;
+            height: 80px;
+            display: block;
+            background-color: rgb(206, 206, 206);
+            text-align: center;
+            line-height: 80px;
+            font-size: 1.2rem;
+            border: 1px solid white;
+            box-shadow: 0 0 5px rgb(112, 112, 112);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="button">按鈕</a>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片輪播</title>
+    <style>
+        img {
+            width: 700px;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #imgCycle {
+            position: absolute;
+            top: 50px;
+            left: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="imgCycle">
+        <img src="images/1.jpg" alt="img">
+        <img src="images/2.jpg" alt="img">
+        <img src="images/3.jpg" alt="img">
+        <img src="images/4.jpg" alt="img">
+        <img src="images/5.jpg" alt="img">
+    </div>
+    <!-- 函式庫 -->
+    <script src="jQuery/jquery-3.6.4.min.js"></script>
+    <!-- 輪播函式 -->
+    <script src="js/jquery.cycle.all.js"></script>
+    <script>
+        $(function () {
+            // 找到輪播區域
+            $('#imgCycle').cycle({
+                fx: 'shuffle',
+            });
+        });
+    </script>
+</body>
+
+</html>

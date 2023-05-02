@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jQuery/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <h1 style="cursor: pointer;">QA</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque itaque non facere, illo ut vitae? Voluptate
+        deserunt, aliquam alias eveniet vero consectetur vitae nisi vel fugiat dolorum in. Facilis, enim?</p>
+
+    <script>
+        // 淡入淡出效果
+        $(function () {
+            // 左鍵點擊h1標籤，
+            $('h1').click(function () {
+                // 自動判斷淡入淡出
+                // Toggle名稱為雙向效果(在此為執行淡入淡出)
+                $('p').fadeToggle();
+            });
+        });
+
+
+
+
+
+
+
+
+
+        // $(document).ready(function () {
+        //     // 撰寫程式碼的地方
+        // });
+
+
+        // // 簡易語法
+        // $(function () {
+        //     // 撰寫程式碼的地方
+        // });
+    </script>
+</body>
+
+</html>

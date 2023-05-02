@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // while迴圈，顯示數字1-5
+        //宣告i變數為1
+        // let i = 1;
+        //當i<=5時，進入迴圈，while等於進入迴圈條件
+        // while (i <= 5) {
+        //     document.write(i);
+        //     i++;
+        // }
+
+        // do迴圈，顯示數字1-5 (先執行再判斷)
+        let i = 0;
+        do {
+            if(i>5){
+                break; //結束迴圈
+            }
+
+            if(i>=1 && i<=5) {
+                document.write(i);
+            }
+            i++
+        } while (i <= 10);
+
+    </script>
+</body>
+
+</html>

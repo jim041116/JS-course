@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 物件(Object) -->
+    <!-- 1.物件基本概念
+        1-1 封裝其他資料的容器，用大括號處理資料
+        1-2 建立物件
+        1-3 使用物件 -->
+
+    <!-- 1-2 建立物件 -->
+    <script>
+        // 建立空白物件 方法一
+        // let obj1 = new Object();
+        // console.log(obj1);
+        // obj1.x = 3;
+        // obj1.y = 4;
+        // obj1.sayHi = function(){
+        //     console.log('Hi');
+        // }
+        // console.log(obj1);
+
+        // // 使用物件
+        // // 看內容物件
+        // console.log(obj1.x);
+        // obj1.sayHi();
+
+        // 使用 this 關鍵字
+        let obj2 = new Object();
+        obj2.x = 3;
+        obj2.y = 4;
+        obj2.sayHi = function(){
+            console.log('Hi');
+            // 在物件的方法中使用this代表物件的本身
+            console.log(this.x);
+            console.log(this.y);
+        }
+        obj2.sayHi();
+    </script>
+    
+</body>
+</html>

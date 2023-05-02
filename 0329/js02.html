@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 流程控制 -->
+    <script>
+        // 程式區塊：用大{}包起來
+        // {
+        //     console.log("Hi");
+        //     alert("午安");
+        //     alert("你好");
+        //     let a = 123;
+        //     alert(a);
+        // }
+
+        // if 判斷式
+        // 成績是否及格
+        // 精簡寫法 3
+        // ES6字串字面值樣板(使用反引號包起來，變數用${變數}包起來)
+        // let score = 41;
+        // let a1 = `您的分數為${score}分-->`
+        // let a2 = "";
+        // if(score >= 60){
+        //     a2 = "及格";
+        // }else{
+        //     a2 = "不及格";
+        // }
+        // alert(a1 + a2)
+
+        // 使用輸入視窗顯示分數，但有效數值為:0-100
+
+        // let score = prompt("請輸入您的分數", "");
+        // if (score == "") {
+        //     alert("請輸入正確數字");
+        //     // 數值等於空值跳出錯誤
+        // } else {
+        //     if (score < 0 || score > 100) {
+        //         alert("請輸入正確數字");
+        //     } else {
+        //         if (score >= 60) {
+        //             alert(`您的分數為${score}分-->及格`);
+        //         } else {
+        //             alert(`您的分數為${score}分-->不及格`);
+        //         }
+        //     }
+        // }
+        // 精簡寫法
+        // let msg = "";
+        // let score = prompt("請輸入分數", "")
+        // if (score == ""){
+        //     msg = "請輸入正確分數";
+        // }else{
+        //     if (score < 0 || score > 100){
+        //         msg = "請輸入正確分數";
+        //     }else{
+        //         if(score >= 60){
+        //             msg = "及格";
+        //         }else{
+        //             msg = "不及格";
+        //         }
+        //     }
+        // }
+        // alert(msg);
+
+        // 帳密測試
+        // 帳號: admin 密碼: 1234
+        // 多層判斷
+        // let id = prompt("請輸入帳號", "");
+        // let ps = prompt("請輸入密碼", "");
+        // if(id == "admin" && ps == "1234"){
+        //     alert("成功登入")
+        // }else if(id == "admin" && ps != "1234"){
+        //     alert("密碼錯誤")
+        // }else if(id != "admin" && ps == "1234"){
+        //     alert("帳號錯誤")
+        // }else if(id != "admin" && ps != "1234"){
+        //     alert("帳號密碼錯誤")
+        // }
+
+        // 年齡分級
+        // 多層條件判斷
+        // let age = prompt("請輸入您的年齡", "");
+        // if(age == null){
+        //     alert("您已經取消");
+        // }else if(age >= 150 || age <= 0){
+        //     alert("請輸入正確年齡");
+        // }else if(age >= 0 && age < 6){
+        //     alert(`您的年齡為${age}歲-->普遍級`);
+        // }else if(age >= 6 && age <12){
+        //     alert(`您的年齡為${age}歲-->保護級`);
+        // }else if(age >=12 && age <15){
+        //     alert(`您的年齡為${age}歲-->輔導12級`);
+        // }else if(age >=15 && age <18){
+        //     alert(`您的年齡為${age}歲-->輔導15級`);
+        // }else if(age >=18){
+        //     alert(`您的年齡為${age}歲-->限制級`);
+        // }else{
+        //     alert("error");
+        // }
+
+        // 多層判斷-->switch
+        // 血型檢查
+        let blood = prompt("請輸入您的血型", "");
+
+        if (blood == null) {
+            alert("取消輸入");
+        } else {
+            switch (blood.toUpperCase()) {
+                case "A":
+                    result = "A型";
+                    break;
+                case "B":
+                    result = "B型";
+                    break;
+                case "AB":
+                    result = "AB型";
+                    break;
+                case "O":
+                    result = "O型";
+                    break;
+                default:
+                    result = "ero";
+            }
+        alert(`您的血型為${result}`);
+    }
+
+
+
+
+
+
+
+
+    //     let userInput = prompt("請輸入數值 (0-100):");
+    //     if (userInput !== null) {
+    //     let num = parseInt(userInput);
+    //     if (!isNaN(num) && num >= 0 && num <= 100) {
+    // console.log("您輸入的數值為: " + num);
+    //     } else {
+    //     alert("請輸入介於 0 到 100 之間的數值！");
+    //         }
+    //     }
+
+    </script>
+
+</body>
+
+</html>

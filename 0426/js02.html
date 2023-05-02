@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 亂數(0-1) -->
+
+    <script>
+        // let n1 = Math.random();
+        // console.log(n1);
+        // n1 = n1*100;
+        // console.log(Math.floor(n1))
+
+        // 使用亂數產生1-100的值
+        // console.log(Math.floor(Math.random() * 100 + 1)); //+1代表從1開始
+
+        // let n3 = (Math.random()*49)+1;
+        // n3 = Math.floor(n3);
+        // console.log(n3);
+
+        // 產生六個數字放在陣列中印出來,並取最大值及最小值
+        let arr1 = [0, 0, 0, 0, 0, 0];
+
+        for (let i = 0; i < arr1.length; i++) {
+            let n1 = Math.floor((Math.random() * 49) + 1);
+            //檢查陣列中是否有重複的值==>indexOf(檢查的值)
+            if (arr1.indexOf(n1) >= 0) {
+                //如果重複則重新產生亂數
+                i--; //若發生重複i值會減1，不然會空值
+                continue;
+            }
+            arr1[i] = n1;
+        }
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i])
+        }
+
+        let min = arr1[0];
+        let max = arr1[0];
+
+        for (let a = 1; a < arr1.length; a++) {
+            if(arr1[a]>max){
+                max=arr1[a];
+            }
+            if(arr1[a]<min){
+                min = arr1[a];
+            }
+        }
+        console.log(min);
+        console.log(max);
+
+
+        // for (let i = 0; i < arr1.length - 1; i++) {
+        //     for (let j = 0; j < arr1.length - 1 - i; j++) {
+        //         // 檢查兩數前值是否大於後值
+        //         if (arr1[j] > arr1[j + 1]) {
+        //             let temp = arr1[j]; //保存大的值
+        //             //再進行交換
+        //             arr1[j] = arr1[j + 1];
+        //             arr1[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        // console.log(arr1);
+        // console.log(`最小值為${arr1[0]}`);
+        // console.log(`最大值為${arr1[arr1.length - 1]}`);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

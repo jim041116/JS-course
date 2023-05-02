@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let i = 0; //總分
+        let avg = 0; //平均
+        let pass = 0; //及格人數
+        let lose = 0; //不及格人數
+
+        while (true) {
+            let score = parseInt(prompt("請輸入分數", ""))
+            if (score < 0) {
+                break;
+            }else if(score > 100){
+                alert(`輸入錯誤，請輸入0-100`)
+                continue //略過迴圈從頭開始
+            }else if (score < 60) {
+                lose++; //不及格變數加總
+            } else if (score >= 60) {
+                pass++; //及格變數加總
+            }
+            i = i + score; //總分加總
+        }
+        if (pass + lose > 0) {
+            avg = i / (pass + lose); //待迴圈結束及分母不為0才做平均運算
+        }
+        console.log(`及格人數：${pass}`);
+        console.log(`不及格人數：${lose}`);
+        console.log(`總分：${i}`);
+        console.log(`總平均：${avg}`);
+
+
+    </script>
+</body>
+
+</html>
