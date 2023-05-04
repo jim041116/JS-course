@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 更改h1標籤的內容及css -->
+    <h1 id="myh1">標題一</h1>
+    <h1>標題二</h1>
+    <script>
+        // 取得h1標籤物件
+        let h1Element = document.querySelector('#myh1');
+        // 更改內容
+        h1Element.innerHTML = '這是標題一';
+        // 更改類別名稱
+        h1Element.className = 'myh1class';
+        // document.querySelector('#myh1').innerHTML = '新標題';
+
+        // css字體放大
+        h1Element.style.fontSize = '4rem'; //需用小駝峰寫法才會套用css
+        // css色彩
+        h1Element.style.color = 'gold';
+    </script>
+</body>
+</html>

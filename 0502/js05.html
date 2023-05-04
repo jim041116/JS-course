@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM 畫面操作</h1>
+    <div id="content">操作區</div>
+    <br>
+    <button onclick="change();">請點我!</button>
+    <script>
+        function change(){
+            // 左鍵點擊變化按鈕時，要處理事情
+            // alert('Hi');
+            // 取得標籤物件
+            let elem = document.querySelector('#content');
+            // 操作標籤物件
+            elem.innerHTML = '<h1>更改後的操作區</h1>';
+            elem.className = 'demo';
+            elem.style.color = 'gold';
+        }
+    </script>
+</body>
+</html>

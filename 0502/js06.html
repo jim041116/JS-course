@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: gold;
+            text-decoration: none;
+            padding: 0.5rem;
+            transition: .8s;
+
+        }
+
+        a:hover {
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+
+        #exps {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#" onclick="changeToAbout();">關於我</a>
+        <a href="#" onclick="changeToExps();">學經歷</a>
+    </div>
+    <hr>
+    <div id="about">
+        關於我
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quas minus. Architecto nobis amet alias, earum debitis tempore harum atque porro magnam praesentium, modi, sunt quam molestiae numquam rerum autem.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quas minus. Architecto nobis amet alias, earum debitis tempore harum atque porro magnam praesentium, modi, sunt quam molestiae numquam rerum autem.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quas minus. Architecto nobis amet alias, earum debitis tempore harum atque porro magnam praesentium, modi, sunt quam molestiae numquam rerum autem.
+        </p>
+    </div>
+    <div id="exps">
+        學經歷
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt.
+        </p>
+    </div>
+
+
+    <script>
+         // 取得標籤物件
+        let aboutDiv = document.querySelector('#about');
+        let aboutexps = document.querySelector('#exps');
+
+        function changeToAbout(){
+            //操作標籤物件
+            aboutDiv.style.display = 'block';
+            aboutexps.style.display = 'none';
+        }
+
+        function changeToExps(){
+            //操作標籤物件
+            aboutDiv.style.display = 'none';
+            aboutexps.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
