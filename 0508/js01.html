@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 事件處理流程 -->
+    <!-- 1.在什麼標籤上 -->
+    <!-- 2.發生什麼事 -->
+    <!-- 3.做什麼處理 -->
+
+    <button onclick="sayHi();">打招呼</button>
+    <div id="showMsg"></div>
+    <script>
+        function sayHi(){
+            console.log('Hi');
+            document.querySelector('#showMsg').innerHTML='Hi';
+        }
+    </script>
+<br><br><br>
+<!-- 另一個事件處理方式 -->
+<button onclick="sayHi2();">打招呼2</button>
+<div id="showMsg2"></div>
+<script>
+    function sayHi2(elem){
+        document.querySelector('#showMsg2').innerHTML='Hi2';
+    }
+</script>
+
+<br><br><br>
+<button onmousedown="color1(this);" onmouseup="color2(this);">點我!</button>
+<script>
+    function color1(elem) {
+        elem.style.color = 'gold';
+    }
+
+    function color2(elem) {
+        elem.style.color = 'black';
+    }
+</script>
+
+
+
+</body>
+</html>

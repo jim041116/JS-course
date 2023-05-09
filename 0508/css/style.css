@@ -1,0 +1,136 @@
+#demo1 {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(168, 255, 226);
+  transition: all 1s;
+}
+#demo1 .text {
+  text-align: center;
+  line-height: 300px;
+  font-size: 4rem;
+  transition: all 1s;
+  color: rgba(0, 0, 0, 0);
+}
+#demo1:hover {
+  transform: scale(0.5) rotate(360deg);
+  background-color: rgb(50, 250, 183);
+}
+#demo1:hover > .text {
+  color: black;
+}
+
+#img_demo {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#img_demo:hover > .mask {
+  transform: translateX(0px);
+}
+#img_demo img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#img_demo .mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 150px;
+  transition: all 1s;
+  transform: translateX(-300px);
+}
+#img_demo .mask a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#img_demo_2 {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#img_demo_2:hover > .mask {
+  transform: translateY(0px);
+}
+#img_demo_2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#img_demo_2 .mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 150px;
+  transition: all 1s;
+  transform: translateY(-150px);
+}
+#img_demo_2 .mask a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#img_demo_3 {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#img_demo_3:hover > .mask {
+  transform: scale(1);
+}
+#img_demo_3 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#img_demo_3 .mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 150px;
+  transition: all 1s;
+  transform: scale(0);
+}
+#img_demo_3 .mask a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#img_demo_4 {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#img_demo_4:hover > .mask {
+  transform: scale(1) rotate(-360deg);
+}
+#img_demo_4 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#img_demo_4 .mask {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 150px;
+  transition: all 1s;
+  transform: scale(0);
+}
+#img_demo_4 .mask a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
