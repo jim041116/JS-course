@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 運用函式參數+其餘參數 -->
+    <!-- 撰寫可將參數合計的函式 -->
+
+    <script>
+        function add(...other){
+            console.log(other);
+            let all = 0;
+            for (let i = 0; i < other.length; i++){
+                all = all + other[i];
+            }
+            console.log(`合計為${all}`);
+        }
+
+        add(3,4);
+        add(1, 2, 3, 4);
+        add(9, 8, 7, 6, 5);
+    </script>
+</body>
+</html>

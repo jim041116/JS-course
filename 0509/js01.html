@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 其餘運算符 -->
+    <!-- 1.運用在解構賦值中 -->
+    <!-- 1-1 陣列:把剩餘資料包在一個新陣列中 -->
+    <!-- 1-2 物件:把剩餘資料包裝在新物件中 -->
+
+    <script>
+        let arr1 = [1, 2, 3, 4, 5];
+        // 解構賦值做法
+        let [n1, n2, n3, n4, n5] = arr1;
+        console.log(n1, n2, n3, n4, n5);
+        // 解構賦值+其餘運算符號
+        let [a1, a2,...data] = arr1;
+        console.log(data);
+    </script>
+</body>
+
+</html>
