@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery mobile css -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- jQuery 主程式 -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- jQuery mobile 主程式 -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="index">
+        <div data-role="header">
+            <h1>Index</h1>
+        </div>
+        <div data-role="content">
+            <img src="./img/kv.jpg" alt="" width="100%">
+            <a href="tel:0800000000" data-role="button">客服專線:0800-000-000</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#index" data-icon="home">首頁</a></li>
+                    <li><a href="#menu" data-icon="shop">商品</a></li>
+                    <li><a href="#about" data-icon="location">關於</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="menu">
+        <div data-role="header">
+            <h1>Menu</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li data-role="list-divider">咖啡飲品<p class="ui-li-aside price">價格</p></li>
+                <li>熱每日精選咖啡<p class="ui-li-aside price">$95</p></li>
+                <li>冰每日精選咖啡<p class="ui-li-aside price">$95</p></li>
+                <li>荔枝百里香風味特調咖啡<p class="ui-li-aside price">$120</p></li>
+                <li>冰栗香蒙布朗風味那堤<p class="ui-li-aside price">$130</p></li>
+                <li data-role="list-divider">星冰樂<p class="ui-li-aside price">價格</p></li>
+                <li>摩卡可可碎片星冰樂<p class="ui-li-aside price">$130</p></li>
+                <li>草莓派風味星冰樂<p class="ui-li-aside price">$150</p></li>
+                <li>巧克力可可碎片星冰樂<p class="ui-li-aside price">$120</p></li>
+                <li>香草風味星冰樂<p class="ui-li-aside price">$100</p></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#index" data-icon="home">首頁</a></li>
+                    <li><a href="#menu" data-icon="shop">商品</a></li>
+                    <li><a href="#about" data-icon="location">關於</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>About</h1>
+        </div>
+        <div data-role="content">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/CbGpD1k6SLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.3556169664525!2d121.523849!3d25.043872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a968cd618e8b%3A0x108d4f0c924eda6a!2z5pif5be05YWLICjmmYLku6Plr5PmiYDploDluIIp!5e0!3m2!1szh-TW!2stw!4v1683705490740!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#index" data-icon="home">首頁</a></li>
+                    <li><a href="#menu" data-icon="shop">商品</a></li>
+                    <li><a href="#about" data-icon="location">關於</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
